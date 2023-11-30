@@ -62,14 +62,10 @@ button {
     width: 1080px;
     margin: 100px auto;
     padding:10px 10px;
-
-    /* debug */
-    background-color: #b4d0e7;
-    min-height: 500px;
 }
 
 .column {
-    min-width: calc(100% / 3 - 20px);
+    width: calc(100% / 3 - 20px);
     border: 1px solid black;
 
         /* debug */
@@ -140,11 +136,11 @@ header {
 
 .column-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: var(--padding);
 }
 
-.column .column-titol {
+.column-title {
     text-align: center;
     padding: var(--padding);
     border-bottom: 1px solid black;
@@ -155,11 +151,20 @@ header {
     flex-direction: column;
     align-items: baseline;
     gap: 15px;
-    padding: 10px;
-    margin-top: 40px;
+    padding: 20px;
 }
 
-.column span {
+span.info {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact {
+    margin: 1.8rem 0;
+}
+
+.column span { 
     padding: 5px 0;
 }
 
@@ -182,4 +187,33 @@ header {
 
 .column h4 {
     margin: 20px 0;
+}
+
+#icon {
+    color: #0763ff;
+}
+
+.orizontal-column {
+    width: 100%;
+    margin: 28px 0;
+    border: 1px solid black;
+}
+
+.business-plan .orizontal-content {
+    display: flex;
+    padding: var(--padding);
+}
+
+.business-plan .left-content {
+    width: 70%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.business-plan .right-content {
+    flex-grow: 1;
+    text-align: end;
+    padding-top: 15px;
 }
