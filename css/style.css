@@ -217,3 +217,25 @@ span.info {
     text-align: end;
     padding-top: 15px;
 }
+
+.img-session {
+    display: flex;
+}
+
+.img-session .img {
+    width: 60%;
+}
+
+.img-session .text {
+    padding: 50px 20px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.img-session a {
+    padding: 10px;
+    border: 1px solid black;
+}
