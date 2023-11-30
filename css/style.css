@@ -46,12 +46,9 @@ button {
     padding: 0 10px;
 }
 
-.jumbofooter-container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 0 10px;
+p {
+    text-align: left;
 }
-
 
 /* HEADER */
 
@@ -64,9 +61,47 @@ header {
 .header-link {
     display: flex;
     align-items: center;
-    padding: var(--padding);
+    padding: 20px;
 }
 
 .header-button {
     width: 100px;
+    margin: 0;
+}
+
+/* MAIN */
+
+/* JUMBOTRON */
+
+.jumbo {
+    background-color: #b4d0e7;
+}
+
+.jumbofooter-container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 40px 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.jumbocontent {
+    display: flex;
+    padding-top: inherit;
+}
+
+.jumbotext {
+    width: 30%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.jumboimg {
+    position: relative;
+    top: 100px;
 }
