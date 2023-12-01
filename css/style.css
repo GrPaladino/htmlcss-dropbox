@@ -331,6 +331,11 @@ span.info {
     border: 1px solid black;
 }
 
+.img-session a:hover {
+    color: white;
+    background-color: rgb(47, 45, 45);
+}
+
 /* card-session */
 
 .card-wrapper {
