@@ -242,11 +242,10 @@ header {
     border-bottom: 1px solid black;
 }
 
-.column-wrapper .column-content {
+.column-content div {
+    min-height: 280px;
     display: flex;
     flex-direction: column;
-    align-items: baseline;
-    gap: 15px;
     padding: 20px;
 }
 
