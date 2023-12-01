@@ -73,10 +73,6 @@ button {
 .column {
     width: calc(100% / 3 - 20px);
     border: 1px solid black;
-
-        /* debug */
-    background-color: white;
-    min-height: 900px;
 }
 
 hr {
@@ -392,4 +388,39 @@ span.info {
 
 #card8 {
     background-color: #ffd830;
+}
+
+/* trial session */
+
+.trial-session {
+    background-color: #b4d0e7;
+    height: 260px;
+}
+
+.container.trial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+}
+
+.trial h2,
+.faq-content h2 {
+    font-size: 2rem;
+    width: 60%;
+    padding-top: 45px;
+}
+
+/* F.A.Q. */
+
+.faq hr {
+    width: 100%;
+    color: black;
+}
+
+.faq .questions {
+    display: flex;
+    justify-content: space-between;
 }
