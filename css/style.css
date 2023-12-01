@@ -79,6 +79,12 @@ button {
     min-height: 900px;
 }
 
+hr {
+    width: 50px;
+    color: #f9f8f8;
+    margin: 40px 0;
+}
+
 /* HEADER */
 
 header {
@@ -183,12 +189,6 @@ span.info {
     text-decoration: underline;
     color: #5330f0;
     padding: 0;
-}
-
-.column hr {
-    width: 50px;
-    color: #f9f8f8;
-    margin: 40px 0;
 }
 
 .column h4 {
@@ -296,23 +296,100 @@ span.info {
 .tile-session .tile {
     width: calc(100% / 3);
     height: calc(100vw / 3);
-
-    /* debug */
-    background-color: #b4d0e7;
 }
 
-.tile.tile-left {
+.tile-left,
+.tile-right {
     display: flex;
     flex-wrap: wrap;
 }
 
-.tile-left > div {
+.tile-left > div,
+.tile-right > div {
     width: 50%;
-
-    /* debug */
-    background-color: white;
+    height: 50%;
 }
 
-.tile-card#card1 {
-    background-image: url(../);
+.tile-card > .img-wrapper {
+    width: 90%;
+    height: 90%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card1 > .img-wrapper {
+    background-color: #a2d39b;
+}
+
+.tile-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tile-card .img-card {
+    width: 150px;
+    height: 150px;
+    display: flex;
+}
+
+.tile-card  img {
+    filter: invert(1);
+}
+
+/* tile left img */
+#card1 {
+    background-color: #d4eed1;
+}
+
+#card2 {
+    background-color: #61082b;
+}
+
+#card3 {
+    background-color: #0093ce;
+    padding: 50px;
+}
+
+#card4 {
+    background-color: #ff1c1c;
+    padding: 50px;
+}
+
+/* tile center */
+
+.tile-center {
+    background-color: #f5f5f5;
+}
+
+.central-logo {
+    padding: 40px;
+}
+
+.central-logo > img {
+    width: 70%;
+}
+
+.central-logo > p {
+    margin-bottom: 40px;
+}
+
+/* tlie right */
+
+#card5 {
+    background-color: #d5001f;
+}
+
+#card6 {
+    background-color: #b4d0e7;
+}
+
+#card7 {
+    background-color: #0d2481;
+}
+
+#card8 {
+    background-color: #ffd830;
 }
