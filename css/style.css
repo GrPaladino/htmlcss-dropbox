@@ -21,6 +21,7 @@ ul {
 
 li {
     display: inline-block;
+    padding: 8px 0px;
 }
 
 a {
@@ -35,6 +36,7 @@ p {
 
 h1 {
     font-size: 5rem;
+    padding-top: 30px;
 }
 
 h2 {
@@ -62,12 +64,23 @@ button {
     color: white;
     background-color: #0a60ff;
     border: none;
+    cursor:pointer;
+}
+
+button:hover {
+    background-color: #0940a5;
 }
 
 .container {
     width: 1080px;
     margin: 100px auto;
     padding:10px 10px;
+}
+
+.jumbofooter-container {
+    width: 1250px;
+    margin: 0 auto;
+    padding: 60px 10px;
 }
 
 .column {
@@ -106,12 +119,6 @@ header {
 
 .jumbo {
     background-color: #b4d0e7;
-}
-
-.jumbofooter-container {
-    width: 1250px;
-    margin: 0 auto;
-    padding: 40px 10px;
 }
 
 .jumbocontent {
@@ -423,4 +430,43 @@ span.info {
 .faq .questions {
     display: flex;
     justify-content: space-between;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #000000;
+    color: white;
+
+    /* debug */
+    min-height: 500px
+}
+
+footer .link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+footer h4 {
+    padding-bottom: 20px;
+}
+
+footer a {
+    padding: 0;
+}
+
+footer hr {
+    color: white;
+}
+
+footer .language {
+    font-size: 0.8rem;
+}
+
+footer button {
+    width: 0px;
+    padding: 0px;
+    border: none;
 }
