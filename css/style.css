@@ -69,6 +69,7 @@ button {
 
 button:hover {
     background-color: #0940a5;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
 }
 
 .container {
@@ -255,6 +256,10 @@ span.info {
     flex-direction: column;
 }
 
+.column ul {
+    list-style: symbols();
+}
+
 #contact {
     margin: 1.8rem 0;
 }
@@ -334,6 +339,7 @@ span.info {
 .img-session a:hover {
     color: white;
     background-color: rgb(47, 45, 45);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
 }
 
 /* card-session */
