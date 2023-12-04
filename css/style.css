@@ -32,7 +32,7 @@ a {
 
 h1 {
     font-size: 5rem;
-    padding-top: 30px;
+    padding-top: 60px;
 }
 
 h2 {
@@ -100,7 +100,8 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: rgb(225, 220, 220);
+    background-color: white;
+    border-bottom: 1px solid #d0dae3;
 }
 
 .header-link {
@@ -196,32 +197,31 @@ header {
 /* JUMBOTRON */
 
 .jumbo {
+    max-height: 800px;
     background-color: #b4d0e7;
 }
 
 .jumbocontent {
     display: flex;
+    position: relative;
+    top: 50px;
 }
 
 .jumbotext {
     width: 30%;
-    margin-top: 29px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     position: relative;
+}
+
+.jumbotext > button {
+    margin: 35px 0;
 }
 
 .jumbotext > span {
     position: absolute;
-    bottom: 0;
+    bottom: 110px;
 }
-
-.jumboimg {
-    position: relative;
-    top: 100px;
-}
-
 
 /* COLUMN SECTION */
 .business-plan > .check {
@@ -259,6 +259,10 @@ span.info {
 
 .column ul {
     list-style: symbols();
+}
+
+.bottom-content .fa-li {
+    color: #0a60ff;
 }
 
 #contact {
