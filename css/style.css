@@ -64,8 +64,8 @@ button {
 }
 
 button:hover {
-    background-color: #0940a5;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+    opacity: 0.8;
 }
 
 .container {
@@ -257,10 +257,6 @@ span.info {
     flex-direction: column;
 }
 
-.column ul {
-    list-style: symbols();
-}
-
 .bottom-content .fa-li {
     color: #0a60ff;
 }
@@ -286,10 +282,6 @@ span.info {
 
 .column h4 {
     margin: 20px 0;
-}
-
-.icon {
-    color: #0763ff;
 }
 
 .orizontal-column {
@@ -509,6 +501,11 @@ span.info {
     height: 100%;
 }
 
+.trial > button {
+    color: black;
+    background-color: white;
+}
+
 .trial h2,
 .faq-content h2 {
     font-size: 2rem;
@@ -544,9 +541,6 @@ span.info {
 footer {
     background-color: #000000;
     color: white;
-
-    /* debug */
-    min-height: 500px
 }
 
 footer .link {
@@ -570,7 +564,7 @@ footer hr {
 
 footer .language {
     font-size: 0.8rem;
-    max-width: 61px;
+    max-width: 90px;
 }
 
 footer button {
@@ -585,7 +579,6 @@ footer button {
     position: absolute;
     bottom: 15px;
     left: 10px;
-    background-color: rgb(42, 39, 39);
 }
 
 .language:hover .lingua {
