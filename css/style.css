@@ -521,6 +521,17 @@ span.info {
 .faq .questions {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.faq p {
+    display: none;
+    font-size: 1.2rem;
+    padding-top: 30px;
+}
+
+.faq .questions:hover .faq-ghost {
+    display: block;
 }
 
 /* FOOTER */
