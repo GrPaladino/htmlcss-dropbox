@@ -73,13 +73,13 @@ button:hover {
 }
 
 .container {
-    width: 1080px;
+    max-width: 1080px;
     margin: 100px auto;
     padding:10px 10px;
 }
 
 .jumbofooter-container {
-    width: 1250px;
+    max-width: 1250px;
     margin: 0 auto;
     padding: 60px 10px;
 }
@@ -565,10 +565,24 @@ footer hr {
 
 footer .language {
     font-size: 0.8rem;
+    max-width: 61px;
 }
 
 footer button {
     width: 0px;
     padding: 0px;
     border: none;
+    position: relative;
+}
+
+.lingua  {
+    display: none;
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    background-color: rgb(42, 39, 39);
+}
+
+.language:hover .lingua {
+    display: block;
 }
