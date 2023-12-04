@@ -30,10 +30,6 @@ a {
     padding: 25px;
 }
 
-p {
-    text-align: left;
-}
-
 h1 {
     font-size: 5rem;
     padding-top: 30px;
@@ -75,13 +71,13 @@ button:hover {
 .container {
     max-width: 1080px;
     margin: 100px auto;
-    padding:10px 10px;
+    padding:10px;
 }
 
 .jumbofooter-container {
     max-width: 1250px;
     margin: 0 auto;
-    padding: 60px 10px;
+    padding: 10px;
 }
 
 .column {
@@ -205,15 +201,20 @@ header {
 
 .jumbocontent {
     display: flex;
-    padding-top: inherit;
 }
 
 .jumbotext {
     width: 30%;
-    margin-top: 100px;
+    margin-top: 29px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.jumbotext > span {
+    position: absolute;
+    bottom: 0;
 }
 
 .jumboimg {
